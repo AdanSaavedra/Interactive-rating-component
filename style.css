@@ -88,3 +88,44 @@ body p{
     padding: 0;
     letter-spacing: 2px;
 }
+/*Thanks page*/
+.container{
+    height: 360px;
+}
+.thanks-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+/*img-container*/
+.text-bg{
+    color: var(--Orange);
+    background-color: hsl(213, 19%, 24%);
+    border-radius: 25px;
+    width: 180px;
+    height: 30px;
+    position: relative;
+    margin-top: 30px;
+}
+.thanks-img-p{
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    margin: 0;
+}
+/*Text container*/
+.thanks-text-container{
+    text-align: center;
+    padding: 0 4px;
+}
+.thanks-title{
+    margin: 36px 0 0 0;
+    color: var(--White);
+    font-weight: 400;
+}
+.thanks-paragraph{
+    color: var(--Medium-Grey);
+    margin: 14px 0 0 0;
+    line-height: 1.5;
+}
