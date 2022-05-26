@@ -23,7 +23,7 @@ body p{
 }
 /*Container*/
 .container{
-    background-color: var(--Dark-Blue);
+    background-image:linear-gradient(var(--Dark-Blue), hsl(213, 19%, 12%)) ;
     padding: 24px;
     width: 350px;
     height: 300px;
@@ -50,28 +50,38 @@ body p{
 .text-paragraph{
     color: var(--Light-Grey);
 }
-/*numbers*/
+
+/*numbers */
 .numbers-container{
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    margin: 12px 0 20px;
+    gap: 30px;
+    margin-top: 26px;
 }
-.number-bg{
+.numbers-container input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.numbers-container label{
+    font-size: 15px;
+    display: inline-block;
     background-color: hsl(213, 19%, 24%);
-    width: 40px;
-    height: 40px;
+    padding: 10px 17px;
     border-radius: 50%;
-    position: relative;
+    color: var(--Medium-Grey);
 }
-.number{
-    position: absolute;
-    left: 16px;
-    top: 12px;
-    margin: 0;
-    color: var(--Light-Grey);
+.numbers-container label:hover{
+    background-color: var(--Orange);
+    cursor: pointer;
+    color: var(--White);
 }
-/*button*/
+.numbers-container input[type="radio"]:checked + label {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+/*submit*/
 .button-container{
     margin:30px 20px 0 0;
 
@@ -88,8 +98,13 @@ body p{
     padding: 0;
     letter-spacing: 2px;
 }
+.submit-button:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor: pointer;
+}
 /*Thanks page*/
-.container{
+.size{
     height: 360px;
 }
 .thanks-img-container{
@@ -128,4 +143,13 @@ body p{
     color: var(--Medium-Grey);
     margin: 14px 0 0 0;
     line-height: 1.5;
+}
+/*Media query*/
+@media(max-width: 375px){
+    .container{
+        width: 300px;
+    }
+    .numbers-container{
+        gap: 20px;
+    }
 }

@@ -32,31 +32,26 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <div class="numbers-container">
-          <div class="number-bg">
-            <p class="number">1</p>
-          </div>
-          <div class="number-bg">
-            <p class="number">2</p>
-          </div>
-          <div class="number-bg">
-            <p class="number">3</p>
-          </div>
-          <div class="number-bg">
-            <p class="number">4</p>
-          </div>
-          <div class="number-bg">
-            <p class="number">5</p>
-          </div>
-        </div>
+        <form class="numbers-container">
+          <input type="radio" id="1" value="1" name="number" />
+          <label for="1">1</label>
+
+          <input type="radio" id="2" value="2" name="number" />
+          <label for="2">2</label>
+
+          <input type="radio" id="3" value="3" name="number" />
+          <label for="3">3</label>
+
+          <input type="radio" id="4" value="4" name="number" />
+          <label for="4">4</label>
+
+          <input type="radio" id="5" value="5" name="number" />
+          <label for="5">5</label>
+        </form>
         <div class="button-container">
-          <button
-            class="submit-button"
-            type="submit"
-            onclick="location.href='thanks.html'"
-          >
-            SUBMIT
-          </button>
+          <a href="./thanks.html">
+            <input type="submit" value="SUBMIT" class="submit-button" />
+          </a>
         </div>
       </article>
     </main>
