@@ -52,33 +52,39 @@ body p{
 }
 
 /*numbers */
-.numbers-container{
+.inputs-container{
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+.form-container{
     margin-top: 26px;
 }
-.numbers-container input[type="radio"]{
+.number-input {
     opacity: 0;
     position: fixed;
     width: 0;
 }
-.numbers-container label{
+.number-label {
     font-size: 15px;
-    display: inline-block;
+    display: inline-grid;
+    place-content: center;
     background-color: hsl(213, 19%, 24%);
-    padding: 10px 17px;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
     color: var(--Medium-Grey);
 }
-.numbers-container label:hover{
+.number-label:hover{
     background-color: var(--Orange);
     cursor: pointer;
     color: var(--White);
+    transition: all 300ms;
 }
-.numbers-container input[type="radio"]:checked + label {
+.number-input:checked + label {
     background-color: var(--Light-Grey);
     color: var(--White);
+    transition: all 300ms;
 }
 
 /*submit*/
@@ -102,6 +108,7 @@ body p{
     color: var(--Orange);
     background-color: var(--White);
     cursor: pointer;
+    transition: all 300ms;
 }
 /*Thanks page*/
 .size{
